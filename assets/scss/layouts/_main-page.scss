@@ -51,6 +51,7 @@
         left: 0px;
         overflow: visible;
         overflow-y: auto;
+        z-index: 10;
 
         padding-top: vw(32px, 320px);
 
@@ -59,6 +60,7 @@
         }
     
         @media screen and (min-width: 921px) {
+            z-index: auto;
             max-height: none;
             position: sticky;
             bottom: auto;
@@ -76,6 +78,101 @@
     }
 }
 
+.footer {
+    width: 100%;
+    
+    padding: 0px vw(12px, 320px) vw(72px, 320px);
+
+    @media screen and (min-width: 526px) {
+        padding: 0px vw(12px, 744px) vw(72px, 744px);
+    }
+    
+    @media screen and (min-width: 921px) {
+        width: vw(1400px);
+        padding: 0px;
+        margin: 0px auto vw(20px);
+    }
+    
+    @media screen and (min-width: 1440px) {
+        width: 1400px;
+        margin: 0px auto 20px;
+    }
+    
+    &_nav {
+        width: 100%;
+    
+        @media screen and (min-width: 526px) {
+                
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+    
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        gap: vw(12px, 320px);
+    
+        @media screen and (min-width: 526px) {
+            gap: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            flex-direction: row;
+            gap: vw(12px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 12px;
+        }
+    }
+    
+    &_list-item {
+    
+        @media screen and (min-width: 526px) {
+                
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+    
+    &_link {
+        font-weight: 500;
+        line-height: 120%;
+        text-decoration-line: underline;
+        text-align: center;
+        color: $gray-light;
+    
+        font-size: vw(10px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(10px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(12px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 12px;
+        }
+    }
+}
 @media screen and (min-width: 526px) {
         
 }

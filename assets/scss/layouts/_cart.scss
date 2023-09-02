@@ -34,6 +34,7 @@
     flex-direction: column;
     background: $white;
     max-height: 80vh;
+    transition: max-height 0.3s ease-in-out;
     
     border-radius: vw(12px, 320px) vw(12px, 320px) 0px 0px;
     backdrop-filter: blur(vw(10px, 320px));
