@@ -1,0 +1,89 @@
+.main-page {
+    width: 100vw;
+
+    padding: vw(32px, 320px) vw(12px, 320px) vw(52px, 320px);
+
+    @media screen and (min-width: 526px) {
+        padding: vw(32px, 744px) vw(12px, 744px) vw(52px, 744px);
+    }
+
+    @media screen and (min-width: 921px) {
+        display: flex;
+        flex-direction: row;
+
+        padding: 0px;
+        width: vw(1360px);
+        margin: 0px auto vw(72px);
+        gap: vw(20px);
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 1360px;
+        margin: 0px auto 72px;
+        gap: 20px;
+    }
+
+    &_content {
+    
+
+        @media screen and (min-width: 526px) {
+            
+        }
+    
+        @media screen and (min-width: 921px) {
+            min-width: vw(800px);
+            max-width: vw(800px);
+        }
+    
+        @media screen and (min-width: 1440px) {
+            min-width: 800px;
+            max-width: 800px;
+        }
+    }
+    
+    &_aside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0px;
+        height: fit-content;
+        left: 0px;
+        overflow: visible;
+        overflow-y: auto;
+
+        padding-top: vw(32px, 320px);
+
+        @media screen and (min-width: 526px) {
+            padding-top: vw(32px, 744px);
+        }
+    
+        @media screen and (min-width: 921px) {
+            max-height: none;
+            position: sticky;
+            bottom: auto;
+
+            padding-top: vw(264px);
+            top: vw(-244px);
+            gap: vw(20px);
+        }
+    
+        @media screen and (min-width: 1440px) {
+            padding-top: 264px;
+            top: -244px;
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 526px) {
+        
+}
+
+@media screen and (min-width: 921px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
